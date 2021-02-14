@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+<body>
+<table class = "table-contents" style = "padding:10px">
+    <tr>
+        <th> 데이터 </th>
+        <th> 예시 </th>
+    </tr>
+    {% for post in posts %}
+        <tr>
+            <td>{{post.제목}}</td>
+            <td>{{post.공지일}}</td>
+            <td>{{post.마감일}}</td>
+            <td>{{post.날짜}}</td>
+            <td>{{post.기관}}</td>
+            <td>{{post.링크}}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
